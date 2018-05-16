@@ -13,13 +13,11 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-              <div className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h2>Simple counter using React JS</h2>
-                <HelloWorld />
-              </div>
-
-
+          <div className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h2>Simple counter using Redux JS</h2>
+            <HelloWorld />
+          </div>
         </div>
       </Provider>
     );

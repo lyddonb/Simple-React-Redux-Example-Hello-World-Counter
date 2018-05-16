@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Hello from '../components/Hello.js'
-import {increment, decrement, reset} from '../actions/action.js'
+import {increment, decrement} from '../actions/action.js'
 
 const mapStateToProps = (state,ownProps) => {
   return {
@@ -15,9 +15,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     },
     onClickMinus : () => {
       dispatch(decrement())
-    },
-    onClickReset : () => {
-      dispatch(reset())
     }
   }
 }
